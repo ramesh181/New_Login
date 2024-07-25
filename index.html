@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js">    </script>
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <div class="container_lgn" id="login">
+                <p id="success" hidden>login Successful!</p>
+                <h2 style="display: flex; justify-content: center; margin: 10px;">Login</h2>
+                <form>
+                    <p for="email" class="email_lbl">Email/Username: </p>
+                    <input type="email" id="email" class="email_lgn" required>
+                    <br />
+                    <p for="password" class="password_lbl">Password: </p>
+                    <input type="password" onfocus="valid_msg()" onblur="valid()" onkeyup="text_valid()" id="login_password" class="password_lgn" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    <div id="message" class="msg" hidden>
+                        <h3>Password must contain the following:</h3>
+                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                        <p id="number" class="invalid">A <b>number</b></p>
+                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                    </div>
+                    <input type="submit" value="Login" id="login" class="login_btn" onclick="success()" clickable />
+                    <br />
+                    <span style="margin:0px; margin-left: 45px;">Don't have an account? </span>
+                    <input type="button" value="Register" id="register_btn" class="signup_btn" onclick="register()" clickable/>
+                </form>    
+        </div>
+
+        <br />
+    
+        <div class="container_register" id="register" hidden>
+            <form action="">
+                <h2 style="display: flex; justify-content: center; margin: 10px;">Register</h2>
+                <p class="name_lbl">Name:</p>
+                <input type="text" class="name" required>
+                <p for="email_reg" class="email_lbl" required>Email/Username: </p>
+                <input type="text" id="email_reg" class="email_lgn" required>
+                <br />
+                <p for="password" class="password_lbl">Password: </p>
+                <input type="password" onfocus="valid_msg()" onblur="valid()" onkeyup="stext_valid()" id="signup_password" class="password_lgn" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <div id="message1" class="msg" hidden>
+                    <h3>Password must contain the following:</h3>
+                    <p id="letter1" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital1" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number1" class="invalid">A <b>number</b></p>
+                    <p id="length1" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+                <p for="cfm_password" class="password_lbl" required>Confirm Password: </p>
+                <input type="password"  onkeyup="confirm_password()" id="cfm_password" class="password_lgn" title="Should be matched with password" required>
+                <p id="cfm_error"></p>
+                <input type="submit" value="Register" id="register" class="Register_btn">
+                <input type="button" value="login" id="register_btn2" class="login_btn" onclick="login()" clickable/>
+            </form>    
+        </div>
+    <!-- </div> -->
+</body>
+</html>

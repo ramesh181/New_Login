@@ -1,0 +1,164 @@
+body {
+    background-image: linear-gradient(to right, rgb(41, 83, 207), rgb(134, 77, 148));
+}
+
+.container_lgn {
+    background-color: rgb(250, 252, 254);
+    width: 30%;
+    border: 1px solid #62f0bf;
+    padding: 20px;
+    margin: 10px;
+    padding: auto;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    border-radius: 5px;
+}
+.email_lbl {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.email_lgn {
+    width: 90%;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 0px;
+    flex: content;
+    justify-content: center;
+}
+.password_lbl {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.password_lgn {
+    width: 90%;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 0px;
+    flex: content;
+    justify-content: center;
+}
+
+#message {
+    margin-left: 15px;
+}
+#message p{
+    margin-left: 50px;
+}
+
+#message1 {
+    margin-left: 15px;
+}
+#message1 p{
+    margin-left: 50px;
+}
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+.forget_pwd {
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.login_btn {
+    width: 90%;
+    height: 35px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    margin-left: 17px;
+    background-color: rgb(111, 111, 239);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.signup_btn {
+    margin: 0px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    color: rgb(65, 65, 223);
+}
+
+.container_register {
+    background-color: rgb(250, 252, 254);
+    width: 30%;
+    border: 1px solid #62f0bf;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: auto;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    border-radius: 5px;
+}
+
+.name {
+    width: 90%;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 0px;
+    flex: content;
+    justify-content: center;
+}
+
+
+.name_lbl {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.Register_btn {
+    width: 90%;
+    height: 35px;
+    margin: 10px;
+    margin-top: 35px;
+    margin-left: 17px;
+    background-color: rgb(111, 111, 239);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border: 0px;
+    border-radius: 25px;
+}
+.signup_btn:hover {
+    text-decoration: underline;
+}
+#success {
+    color: rgb(110, 190, 110);
+    display: flex; 
+    justify-content: center; 
+    margin: 10px;
+    display: none;
+}
+#warning {
+    color: rgb(236, 12, 12);
+    display: flex; 
+    margin-left: 15px;
+    justify-content: center; 
+    margin: 10px;
+    display: none;
+}
